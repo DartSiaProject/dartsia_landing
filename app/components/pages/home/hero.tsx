@@ -34,6 +34,9 @@ export default function Hero() {
               </div>
             </div>
           </div>
+          <div className="md:hidden">
+            <img src="/assets/images/phone-mockup.png" alt="Mobile app" />
+          </div>
           <div className="hidden md:block md:col-span-2">
             <img
               src="/assets/images/phone-mockup.png"
