@@ -28,8 +28,8 @@ export default function Home(props: Route.ComponentProps) {
       <Hero />
 
       {/* big centered Logo surronded by border top and bottom */}
-      <section className="bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-b border-border mt-8 mb-8">
+      <section className="bg-background mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-b border-border mb-8">
           <img
             src="/assets/icons/logo.svg"
             alt="Logo"

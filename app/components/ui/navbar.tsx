@@ -1,4 +1,16 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "~/components/ui/sheet";
+import { Button } from "./button";
+import { MenuIcon } from "lucide-react";
 
 export default function NavBar() {
   return (
@@ -60,27 +72,56 @@ export default function NavBar() {
             </Link>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
-            <button
-              type="button"
-              className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="outline">
+                  <MenuIcon size={24} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="top">
+                <SheetHeader>
+                  <SheetTitle>
+                    <img
+                      className="h-8 w-auto"
+                      src="/assets/icons/logo.svg"
+                      alt="Logo"
+                    />
+                  </SheetTitle>
+                </SheetHeader>
+                <SheetClose asChild key="features">
+                  <Link
+                    to={"#features"}
+                    className="px-4 text-gray-500 font-medium"
+                  >
+                    Features
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild key="benefits">
+                  <Link
+                    to={"#benefits"}
+                    className="px-4 text-gray-500 font-medium"
+                  >
+                    Benefits
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild key="about">
+                  <Link
+                    to={"#about"}
+                    className="px-4 text-gray-500 font-medium"
+                  >
+                    About Us
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild key="download">
+                  <Link
+                    to={"#download"}
+                    className="px-4 text-gray-500 font-medium mb-4"
+                  >
+                    Download
+                  </Link>
+                </SheetClose>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
