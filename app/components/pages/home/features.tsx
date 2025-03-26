@@ -13,7 +13,7 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {/* Network */}
             <div className="flex flex-col items-center gap-y-4">
               <img
@@ -21,7 +21,7 @@ export default function Features() {
                 alt="Network Overview"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">Network overview</h2>
+              <h2 className="text-3xl text-center font-bold">Network overview</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
@@ -35,7 +35,7 @@ export default function Features() {
                 alt="Host Configuration"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">Host configuration</h2>
+              <h2 className="text-3xl text-center font-bold">Host configuration</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
@@ -49,7 +49,7 @@ export default function Features() {
                 alt="Renter Configuration"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">Renter configuration</h2>
+              <h2 className="text-3xl text-center font-bold">Renter configuration</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
@@ -63,7 +63,7 @@ export default function Features() {
                 alt="Monitoring"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">Renterd Monitoring</h2>
+              <h2 className="text-3xl text-center font-bold">Renterd Monitoring</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
@@ -77,7 +77,7 @@ export default function Features() {
                 alt="Files Management"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">Files Management</h2>
+              <h2 className="text-3xl text-center font-bold">Files Management</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
@@ -91,7 +91,7 @@ export default function Features() {
                 alt="File Encryption"
                 className="w-8 h-8"
               />
-              <h2 className="text-3xl font-bold">File Encryption</h2>
+              <h2 className="text-3xl text-center font-bold">File Encryption</h2>
               <p className="text-lg text-center">
                 Dartsia has been specifically designed to allow you to display,
                 configure and access a Renterd server on the Sia network.
