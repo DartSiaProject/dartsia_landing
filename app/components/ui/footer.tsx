@@ -38,7 +38,7 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className="flex md:flex-col gap-y-4 md:place-self-end mt-4 md:mt-0">
+          <div className="flex md:flex-col gap-x-4 md:gap-y-4 md:place-self-end mt-4 md:mt-0">
             <p className="hidden md:block">Get the App</p>
             <Link to={"/"}>
               <img
