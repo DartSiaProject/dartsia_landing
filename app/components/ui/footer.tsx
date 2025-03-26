@@ -4,9 +4,15 @@ export default function Footer() {
   return (
     <footer className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-2 justify-between items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center">
           <div className="flex flex-col gap-y-4">
-            <img src="/assets/icons/logo.svg" className="h-8 w-8" alt="Logo" />
+            <Link to={"/"}>
+              <img
+                src="/assets/icons/logo.svg"
+                className="h-8 w-8"
+                alt="Logo"
+              />
+            </Link>
 
             <div className="flex gap-x-4">
               <Link to="#download" className="hover:text-gray-400">
@@ -31,13 +37,9 @@ export default function Footer() {
                 Download
               </Link>
             </div>
-
-            <div className="text-gray-400">
-              &copy; 2025 Dartsia Team. All rights reserved
-            </div>
           </div>
-          <div className="flex flex-col gap-y-4 place-self-end">
-            <p>Get the App</p>
+          <div className="flex md:flex-col gap-y-4 md:place-self-end mt-4 md:mt-0">
+            <p className="hidden md:block">Get the App</p>
             <Link to={"/"}>
               <img
                 className="h-8 w-auto"
@@ -53,6 +55,9 @@ export default function Footer() {
               />
             </Link>
           </div>
+        </div>
+        <div className="text-gray-400 mt-8">
+          &copy; 2025 Dartsia Team. All rights reserved
         </div>
       </div>
     </footer>
