@@ -33,7 +33,7 @@ export default function Home(props: Route.ComponentProps) {
           <img
             src="/assets/icons/logo.svg"
             alt="Logo"
-            className="mx-auto"
+            className="mx-auto w-28 h-28"
           />
         </div>
       </section>
