@@ -10,7 +10,7 @@ import {
   SheetTrigger,
 } from "~/components/ui/sheet";
 import { Button } from "./button";
-import { MenuIcon } from "lucide-react";
+import { Github, GithubIcon, MenuIcon } from "lucide-react";
 
 export default function NavBar() {
   return (
@@ -56,22 +56,45 @@ export default function NavBar() {
             </div>
           </div>
           <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
-            <Link to={"/"}>
+            <Link
+              to="https://github.com/DartSiaProject/dartsia_landing"
+              target="_blank"
+            >
+              <img
+                className="w-8"
+                src="/assets/icons/github.svg"
+                alt="Github Repository"
+              />
+            </Link>
+            <Link
+              to="https://play.google.com/store/apps/details?id=com.sia.sia_host_mobile"
+              target="_blank"
+            >
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/play-store.svg"
-                alt="Logo"
+                alt="PLaystore link"
               />
             </Link>
             <Link to={"/"}>
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/app-store.svg"
-                alt="Logo"
+                alt="Appstore link"
               />
             </Link>
           </div>
-          <div className="-mr-2 flex items-center sm:hidden">
+          <div className="-mr-2 flex items-center sm:hidden gap-x-4">
+            <Link
+              to="https://github.com/DartSiaProject/dartsia_landing"
+              target="_blank"
+            >
+              <img
+                className="w-8"
+                src="/assets/icons/github.svg"
+                alt="Github Repository"
+              />
+            </Link>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline">

@@ -19,12 +19,12 @@ export default function Hero() {
                   network.
                 </p>
                 <div className="mt-8 md:mt-8 flex gap-4 justify-center md:justify-start">
-                  <Link to="/docs">
-                    <Button>Get Started</Button>
+                  <Link to="https://medium.com/@cminnovation3/list/reading-list" target="_blank">
+                    <Button className="cursor-pointer">Get Started</Button>
                   </Link>
                   {/* watch video link */}
-                  <Link to="/docs">
-                    <Button variant="secondary">
+                  <Link to="https://youtu.be/Wd261F3GvsI?feature=shared" target="_blank">
+                    <Button variant="secondary" className="cursor-pointer">
                       {/* Icon */}
                       <CirclePlay size={24} />
                       Watch Video
