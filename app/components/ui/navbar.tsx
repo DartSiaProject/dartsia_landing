@@ -73,14 +73,14 @@ export default function NavBar() {
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/play-store.svg"
-                alt="PLaystore link"
+                alt="PLaystore"
               />
             </Link>
             <Link to={"/"}>
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/app-store.svg"
-                alt="Appstore link"
+                alt="Appstore"
               />
             </Link>
           </div>

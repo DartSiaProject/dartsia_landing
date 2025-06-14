@@ -40,18 +40,19 @@ export default function Footer() {
           </div>
           <div className="flex md:flex-col gap-x-4 md:gap-y-4 md:place-self-end mt-4 md:mt-0">
             <p className="hidden md:block">Get the App</p>
-            <Link to={"/"}>
+            <Link to="https://play.google.com/store/apps/details?id=com.sia.sia_host_mobile"
+              target="_blank">
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/play-store.svg"
-                alt="Logo"
+                alt="Playstore"
               />
             </Link>
             <Link to={"/"}>
               <img
                 className="h-8 w-auto"
                 src="/assets/icons/app-store.svg"
-                alt="Logo"
+                alt="Appstore"
               />
             </Link>
           </div>

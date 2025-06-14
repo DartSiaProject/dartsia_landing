@@ -18,18 +18,21 @@ export default function Download() {
             <div className="mt-8 ">
               <p className="text-lg font-semibold">Get the App</p>
               <div className="flex gap-x-4">
-                <Link to={"/"}>
+                <Link
+                  to="https://play.google.com/store/apps/details?id=com.sia.sia_host_mobile"
+                  target="_blank"
+                >
                   <img
                     className="h-12 w-auto"
                     src="/assets/icons/play-store.svg"
-                    alt="Logo"
+                    alt="Playstore"
                   />
                 </Link>
                 <Link to={"/"}>
                   <img
                     className="h-12 w-auto"
                     src="/assets/icons/app-store.svg"
-                    alt="Logo"
+                    alt="Appstore"
                   />
                 </Link>
               </div>
