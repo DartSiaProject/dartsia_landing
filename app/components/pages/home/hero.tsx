@@ -19,7 +19,7 @@ export default function Hero() {
                   network.
                 </p>
                 <div className="mt-8 md:mt-8 flex gap-4 justify-center md:justify-start">
-                  <Link to="https://medium.com/@cminnovation3/list/reading-list" target="_blank">
+                  <Link to="https://medium.com/@dartsia" target="_blank">
                     <Button className="cursor-pointer">Get Started</Button>
                   </Link>
                   {/* watch video link */}
